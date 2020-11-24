@@ -1,0 +1,13 @@
+- go build
+- go build -ldflags "-s -w"
+- using env:   export GIN_MODE=release
+- using code:  gin.SetMode(gin.ReleaseMode)
+
+
+# Deployment on Heroku
+1. Pipeline : Add Project ot github
+2. Create Procfile : web: bin/name module
+3. Create App in Heroku
+4. Create app and pipe line
+5. Back to sourcecode & revise server.go by editing port configuration
+6. Go to Heroku and select Setting Tab and Add variable GOVERSION
